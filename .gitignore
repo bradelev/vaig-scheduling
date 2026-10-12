@@ -1,0 +1,22 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+supabase/.temp/
+.claude/worktrees/
+
+# Next.js
+.next/
+out/
+*.tsbuildinfo
+
+# Vercel
+.vercel/
+
+# Test artifacts
+coverage/
+
+# Real client data — NEVER commit (CLAUDE.md hard rule)
+vaig-data/
+*-rejects.csv

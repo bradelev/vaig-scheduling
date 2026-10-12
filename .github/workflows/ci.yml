@@ -1,0 +1,60 @@
+# The referee: every PR must pass this. Iterate until green.
+# This is also the ONLY place where the Supabase stack (Docker) exists —
+# dev machines run Docker-free; integration tests live here.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gate — does the scaffold exist yet?
+        id: gate
+        run: |
+          if [ -f package.json ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "No package.json yet (pre E0-T2) — CI is a no-op."
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: denoland/setup-deno@v2
+        if: steps.gate.outputs.run == 'true'
+        with:
+          deno-version: v2.x
+
+      - name: Install dependencies
+        if: steps.gate.outputs.run == 'true'
+        run: npm ci
+
+      - name: Full check (lint + typecheck + unit tests — Docker-free)
+        if: steps.gate.outputs.run == 'true'
+        run: npm run check
+
+      - uses: supabase/setup-cli@v1
+        if: steps.gate.outputs.run == 'true'
+        with:
+          version: latest
+
+      - name: Supabase stack (ephemeral — applies all migrations)
+        if: steps.gate.outputs.run == 'true'
+        run: supabase start
+
+      - name: Integration tests (against the runner's stack)
+        if: steps.gate.outputs.run == 'true'
+        run: npm run test:integration

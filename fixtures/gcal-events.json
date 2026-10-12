@@ -1,0 +1,892 @@
+{
+  "kind": "calendar#events",
+  "summary": "VAIG (fixture)",
+  "timeZone": "America/Montevideo",
+  "items": [
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ko01",
+      "status": "confirmed",
+      "created": "2026-07-10T13:15:04.000Z",
+      "updated": "2026-07-10T13:15:04.300Z",
+      "summary": "External - Cita con Agustina Piriz 59891112233",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-20T14:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-20T14:59:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ko02",
+      "status": "confirmed",
+      "created": "2026-07-11T09:02:11.000Z",
+      "updated": "2026-07-11T09:02:11.500Z",
+      "summary": "External - Cita con Micaela Fontes  59892223344",
+      "colorId": "9",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-20T15:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-20T16:29:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ko03",
+      "status": "cancelled",
+      "created": "2026-07-08T18:40:00.000Z",
+      "updated": "2026-07-12T10:00:00.000Z",
+      "summary": "External - Cita con rosario techera 59893334455",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-21T10:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-21T10:59:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 1,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ko04",
+      "status": "confirmed",
+      "created": "2026-07-12T12:00:00.000Z",
+      "updated": "2026-07-12T12:00:00.200Z",
+      "summary": "External - Cita con Florencia Umpierrez",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-21T16:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-21T16:59:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ko05",
+      "status": "confirmed",
+      "created": "2026-07-12T15:30:00.000Z",
+      "updated": "2026-07-12T15:30:00.900Z",
+      "summary": "External - Cita con iara 59894445566",
+      "colorId": "9",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-22T12:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-22T13:29:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ko06",
+      "status": "confirmed",
+      "created": "2026-07-13T11:00:00.000Z",
+      "updated": "2026-07-13T11:00:00.100Z",
+      "summary": "External - Cita con Paula Silveira 59895556677",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-22T15:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-22T15:59:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma01",
+      "status": "confirmed",
+      "created": "2026-07-13T11:05:00.000Z",
+      "updated": "2026-07-13T11:05:00.400Z",
+      "summary": "Paula Silveira pe 3/8 cc y ax",
+      "colorId": "1",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-22T15:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-22T16:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma02",
+      "status": "confirmed",
+      "created": "2026-06-30T14:20:00.000Z",
+      "updated": "2026-06-30T14:20:00.700Z",
+      "summary": "Carolina Baladán mp1/3 y cc 1/2",
+      "colorId": "9",
+      "creator": {
+        "email": "emp-iara@example.com"
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-20T13:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-20T14:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma03",
+      "status": "confirmed",
+      "created": "2026-07-01T10:00:00.000Z",
+      "updated": "2026-07-01T10:00:00.100Z",
+      "summary": "josefina recoba  ",
+      "colorId": "6",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-20T17:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-20T18:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma04",
+      "status": "confirmed",
+      "created": "2026-07-02T16:45:00.000Z",
+      "updated": "2026-07-02T16:45:00.300Z",
+      "summary": "Milagros masaje",
+      "colorId": "10",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-21T18:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-21T19:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma05",
+      "status": "confirmed",
+      "created": "2026-07-03T09:30:00.000Z",
+      "updated": "2026-07-03T09:30:00.900Z",
+      "summary": "Verónica Larre limpieza de cutis con hidratacion de labios (promo Lu)",
+      "colorId": "8",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-21T11:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-21T12:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma06",
+      "status": "confirmed",
+      "created": "2026-07-05T20:00:00.000Z",
+      "updated": "2026-07-05T20:00:00.200Z",
+      "summary": "Estefanía Curbelo axilas 6/6 y piernas 091112223",
+      "colorId": "1",
+      "creator": {
+        "email": "emp-lu@example.com"
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-22T19:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-22T20:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma07",
+      "status": "confirmed",
+      "created": "2026-07-06T12:10:00.000Z",
+      "updated": "2026-07-06T12:10:00.600Z",
+      "summary": "noelia limpieza facial x lu delgado Noelia Zabala 092223334 gracias",
+      "colorId": "1",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-23T09:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-23T10:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma08",
+      "status": "confirmed",
+      "created": "2026-07-07T15:00:00.000Z",
+      "updated": "2026-07-07T15:00:00.100Z",
+      "summary": "Andrea Perrone cc y ax7/8  lp  linea alba y mp 6/10",
+      "description": "debe abonar 950",
+      "colorId": "6",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-23T17:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-23T18:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma09",
+      "status": "confirmed",
+      "created": "2026-07-08T10:00:00.000Z",
+      "updated": "2026-07-08T10:00:00.400Z",
+      "summary": "Bruno Etchart entrecejo",
+      "colorId": "5",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-23T16:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-23T17:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma10",
+      "status": "cancelled",
+      "created": "2026-07-09T13:00:00.000Z",
+      "updated": "2026-07-14T08:00:00.000Z",
+      "summary": "Gimena Sosa control botox",
+      "colorId": "3",
+      "creator": {
+        "email": "emp-iara@example.com"
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-24T18:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-24T19:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 2,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ma11",
+      "status": "confirmed",
+      "created": "2026-07-09T19:00:00.000Z",
+      "updated": "2026-07-09T19:00:00.800Z",
+      "summary": "Tamara uñas tel 12345",
+      "colorId": "6",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-24T10:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-24T11:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000em01",
+      "status": "confirmed",
+      "created": "2026-07-10T08:00:00.000Z",
+      "updated": "2026-07-10T08:00:00.100Z",
+      "summary": "Lu no",
+      "colorId": "1",
+      "creator": {
+        "email": "emp-lu@example.com"
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-20T08:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-20T12:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000em02",
+      "status": "confirmed",
+      "created": "2026-07-10T08:05:00.000Z",
+      "updated": "2026-07-10T08:05:00.300Z",
+      "summary": "cyn no (consultar)",
+      "colorId": "6",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-21T08:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-21T15:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000em03",
+      "status": "confirmed",
+      "created": "2026-07-10T08:10:00.000Z",
+      "updated": "2026-07-10T08:10:00.500Z",
+      "summary": "Stephy no",
+      "colorId": "3",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-22T08:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-22T13:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000em05",
+      "status": "cancelled",
+      "created": "2026-07-10T08:20:00.000Z",
+      "updated": "2026-07-13T09:00:00.000Z",
+      "summary": "Lu no, médico",
+      "colorId": "1",
+      "creator": {
+        "email": "emp-lu@example.com"
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-24T15:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-24T18:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 1,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000em06",
+      "status": "confirmed",
+      "created": "2026-07-12T21:00:00.000Z",
+      "updated": "2026-07-12T21:00:00.700Z",
+      "summary": "Iara de 7:30 a 16:30 (9)",
+      "colorId": "9",
+      "creator": {
+        "email": "emp-iara@example.com"
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-20T21:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-20T21:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000em07",
+      "status": "confirmed",
+      "created": "2026-07-12T21:05:00.000Z",
+      "updated": "2026-07-12T21:05:00.100Z",
+      "summary": "Lu de 13 a 20:30 (7,5)",
+      "colorId": "1",
+      "creator": {
+        "email": "emp-lu@example.com"
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-21T21:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-21T22:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ch01",
+      "status": "confirmed",
+      "created": "2026-07-11T11:00:00.000Z",
+      "updated": "2026-07-11T11:00:00.300Z",
+      "summary": "lista de compras ",
+      "description": "alcohol 2l",
+      "colorId": "11",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-22T11:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-22T12:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ch02",
+      "status": "confirmed",
+      "created": "2026-07-11T11:05:00.000Z",
+      "updated": "2026-07-11T11:05:00.100Z",
+      "summary": "Pagar IMM",
+      "colorId": "11",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-23T12:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-23T13:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ch03",
+      "status": "confirmed",
+      "created": "2026-07-11T11:10:00.000Z",
+      "updated": "2026-07-11T11:10:00.600Z",
+      "summary": "Mandar recordatorios",
+      "colorId": "11",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-24T12:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-24T13:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ch04",
+      "status": "confirmed",
+      "created": "2026-07-11T11:15:00.000Z",
+      "updated": "2026-07-11T11:15:00.200Z",
+      "summary": "bps vence hoy",
+      "colorId": "11",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-20T12:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-20T12:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ch05",
+      "status": "confirmed",
+      "created": "2026-07-11T11:20:00.000Z",
+      "updated": "2026-07-11T11:20:00.400Z",
+      "summary": "ver si llego el pedido de cera",
+      "colorId": "11",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-07-21T12:00:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "end": {
+        "dateTime": "2026-07-21T12:30:00-03:00",
+        "timeZone": "America/Montevideo"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ad01",
+      "status": "confirmed",
+      "created": "2026-07-01T00:00:00.000Z",
+      "updated": "2026-07-01T00:00:00.100Z",
+      "summary": "Feriado - Jura de la Constitución",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "date": "2026-07-18"
+      },
+      "end": {
+        "date": "2026-07-19"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    },
+    {
+      "kind": "calendar#event",
+      "id": "vaigfx0000000000000000ad02",
+      "status": "confirmed",
+      "created": "2026-07-01T00:05:00.000Z",
+      "updated": "2026-07-01T00:05:00.300Z",
+      "summary": "cerrado por reformas",
+      "creator": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "shop@example.com",
+        "self": true
+      },
+      "start": {
+        "date": "2026-07-25"
+      },
+      "end": {
+        "date": "2026-07-27"
+      },
+      "sequence": 0,
+      "reminders": {
+        "useDefault": true
+      },
+      "eventType": "default"
+    }
+  ]
+}

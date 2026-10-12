@@ -1,0 +1,147 @@
+/*
+ * Shared button styles (2026-08-18). The app is otherwise inline styles, but
+ * buttons need :hover / :active / :focus-visible states that inline can't
+ * express — so the one shared button set lives in a CSS module. Variants map to
+ * the Button.tsx `variant` prop. Palette mirrors lib/ui/theme.ts.
+ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s, box-shadow 0.12s, color 0.12s;
+  white-space: nowrap;
+  text-decoration: none; /* also used on <a> */
+}
+.btn:active {
+  transform: translateY(0.5px);
+}
+.btn:focus-visible {
+  outline: 2px solid #0d7d86;
+  outline-offset: 2px;
+}
+.btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+  transform: none;
+}
+
+/* size */
+.sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+/* block — full-width form CTA */
+.block {
+  width: 100%;
+}
+
+/* wrap — full-width list-item button whose label can be long (a client name +
+ * phone). Left-aligned, multi-line; overrides the base center + nowrap. */
+.wrap {
+  justify-content: flex-start;
+  text-align: left;
+  white-space: normal;
+}
+
+/* primary — solid accent */
+.primary {
+  background: #0d7d86;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(13, 125, 134, 0.25);
+}
+.primary:hover:not(:disabled) {
+  background: #0a6870;
+}
+
+/* whatsapp — solid green */
+.whatsapp {
+  background: #1fa855;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(31, 168, 85, 0.25);
+}
+.whatsapp:hover:not(:disabled) {
+  background: #178a45;
+}
+
+/* ghost — bordered, accent text */
+.ghost {
+  background: #fff;
+  color: #0d7d86;
+  border-color: #d7d2c8;
+}
+.ghost:hover:not(:disabled) {
+  background: #e7f1f0;
+  border-color: #0d7d86;
+}
+
+/* neutral — bordered, grey text (icon buttons like the ⋮ row menu: visible as
+ * a real control, but without the accent-blue pull of ghost) */
+.neutral {
+  background: #fff;
+  color: #5b6169;
+  border-color: #d7d2c8;
+}
+.neutral:hover:not(:disabled) {
+  background: #efece6;
+  border-color: #b9b2a5;
+  color: #1c222b;
+}
+
+/* quiet — text button, subtle hover */
+.quiet {
+  background: transparent;
+  color: #525b67;
+  padding: 8px 12px;
+}
+.quiet:hover:not(:disabled) {
+  background: #f0ede7;
+  color: #1c222b;
+}
+
+/* muted — solid neutral grey (a recorded/selected neutral state) */
+.muted {
+  background: #8b857a;
+  color: #fff;
+}
+.muted:hover:not(:disabled) {
+  background: #7a7468;
+}
+
+/* danger — solid red (the "Sí, quitar" confirm action) */
+.danger {
+  background: #c0392b;
+  color: #fff;
+}
+.danger:hover:not(:disabled) {
+  background: #a5301f;
+}
+
+/* dangerGhost — bordered red (the trigger, before confirm) */
+.dangerGhost {
+  background: #fff;
+  color: #c0392b;
+  border-color: rgba(192, 57, 43, 0.35);
+}
+.dangerGhost:hover:not(:disabled) {
+  background: #fbecea;
+}
+
+/* No dark-mode block on purpose (2026-08-19): the rest of the app is
+ * light-only (all-inline styles with #fff / #111 grounds, no @media). When
+ * Button had its own dark palette, on a device set to dark mode the buttons
+ * turned dark (ghost → a dark-blue fill, the ⋮ → a dark disc) on top of the
+ * still-white tables — the buttons were the ONLY thing honoring the OS theme.
+ * Keeping Button light-only makes it consistent with everything around it. If
+ * the app ever gains real dark-mode support, reintroduce it app-wide, not just
+ * here. */

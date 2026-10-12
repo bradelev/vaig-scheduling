@@ -1,0 +1,57 @@
+/* =====================================================================
+   Public booking theme — WHITE-LABEL TOKENS. Swap this block → new look.
+   VAIG: warm stone + teal, "cálido / táctil" (direction B, approved
+   2026-08-27). Loaded only under /reservar (route-segment CSS), so the
+   staff app is untouched. Fonts come from next/font (self-hosted).
+   ===================================================================== */
+.rsv-root {
+  /* --brand is the tint/ring/hover hue (3.05:1 with white — never text on it);
+     --brand-deep carries white text: CTA, selected chips, avatars (4.9:1). */
+  --brand:        #16a3ad;
+  --brand-deep:   #0d7d86;
+  --brand-tint:   rgba(22, 163, 173, 0.12);
+  --bg:           #efe9e2;
+  --card:         #fbf8f4;
+  --card-2:       #f4efe8;
+  --ink:          #33302b;
+  --ink-soft:     #6f685d;
+  --ink-faint:    #8f8677; /* decorative only (3.1:1) — small text uses --ink-soft (4.8:1) */
+  --line:         #e5ddd1;
+  --ok:           #2f9e6b;
+  --danger:       #a02525;
+  --danger-bg:    #fdecea;
+  --radius:       18px;
+  --radius-sm:    14px;
+  --shadow-card:  0 1px 0 #fff inset, 0 10px 24px rgba(51, 48, 43, 0.06);
+  --shadow-cta:   0 10px 24px rgba(22, 163, 173, 0.32);
+  --ease:         cubic-bezier(0.4, 0, 0.2, 1);
+
+  min-height: 100dvh;
+  background: var(--bg);
+  background-image: radial-gradient(120% 80% at 50% -10%, #f3eee7, var(--bg) 55%);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: #efe9e2;
+}
+
+.rsv-root *,
+.rsv-root *::before,
+.rsv-root *::after {
+  box-sizing: border-box;
+}
+
+.rsv-root button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.rsv-root :focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 8px;
+}

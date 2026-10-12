@@ -1,0 +1,155 @@
+/*
+ * Shared responsive grid: desktop table / mobile cards (2026-08-11). The app is
+ * otherwise all-inline styles, but a true desktop-table / mobile-cards split
+ * needs media queries, which inline styles can't express — so the grids share
+ * this one CSS module (scoped, Next-native, no dependency).
+ *
+ * Each screen sets its own column widths via the `--cols` custom property on
+ * `.headRow`/`.row` (inline `style={{ ['--cols']: '1.6fr 1fr 90px' }}`), so the
+ * shared rules don't hardcode any one screen's columns.
+ *
+ * Desktop (>= 720px): a real table, full page width, no horizontal scroll.
+ * Mobile (< 720px): each row becomes a stacked card; the header is hidden and
+ * each cell shows its own label (`.cellLabel`). No scrolling of any kind.
+ */
+
+.frame {
+  border: 1px solid #e7e2d8;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.headRow {
+  display: grid;
+  grid-template-columns: var(--cols);
+  border-bottom: 1px solid #e7e2d8;
+  background: #f4f0e8;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.th {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b665e;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+.thStatic {
+  cursor: default;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: var(--cols);
+  border-bottom: 1px solid #e7e2d8;
+}
+.row:last-child {
+  border-bottom: none;
+}
+.row:nth-child(even) {
+  background: #faf8f3;
+}
+.row:hover {
+  background: #f2ede1;
+}
+
+.cell {
+  padding: 0 12px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #33302b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cellStack {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+.name {
+  font-weight: 600;
+}
+.sub {
+  color: #6b665e;
+  font-size: 12px;
+}
+.muted {
+  color: #6b665e;
+  font-size: 13px;
+}
+
+/* Per-cell label is desktop-hidden; the header row carries the labels. */
+.cellLabel {
+  display: none;
+}
+
+/* ---- Mobile: cards ---- */
+@media (max-width: 719px) {
+  .headRow {
+    display: none;
+  }
+  .frame {
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: visible;
+  }
+  .row {
+    display: block;
+    border: 1px solid #e7e2d8;
+    border-radius: 12px;
+    background: #fff;
+    padding: 12px 14px;
+  }
+  .row:nth-child(even) {
+    background: #fff;
+  }
+  .cell {
+    min-height: 0;
+    padding: 3px 0;
+    white-space: normal;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .cellStack {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .name {
+    font-size: 17px;
+    padding-bottom: 6px;
+  }
+  .cellLabel {
+    display: inline;
+    color: #6b665e;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  /* The name cell is the card title — no label, full width. */
+  .nameCell {
+    justify-content: flex-start;
+  }
+  .nameCell .cellLabel {
+    display: none;
+  }
+  /* Action cells (buttons/links) stretch full width in card mode. */
+  .actionsCell {
+    padding-top: 8px;
+  }
+}
