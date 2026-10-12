@@ -16,14 +16,32 @@ This repository is a single-commit snapshot of the private production repository
 | | |
 |---|---|
 | **Stack** | Next.js 14 (App Router) on Vercel · Supabase (Postgres, pg_cron, Deno edge functions) · WhatsApp Cloud API · Google Calendar API |
-| **Size** | ~32k lines of TypeScript and SQL · 32 migrations · 5 edge functions · ~850 unit and edge-function tests + integration tests against real Postgres in CI |
+| **Size** | ~35k lines of TypeScript and SQL · 32 migrations · 5 edge functions · ~800 unit and edge-function tests + 84 integration tests against real Postgres in CI |
 | **Users** | Clinic staff (internal panel, mobile-first) and clients (public booking page, phone login) |
 | **Source of truth** | [`PRD.md`](PRD.md) (scope contract) and [`docs/`](docs/) (strategy and design docs) |
 
 ---
 
+## For reviewers
+
+**My role:** sole engineer. I wrote the PRD, the architecture and the ADRs and reviewed every change; Claude Code agents implemented the code under the process described in [Engineering workflow with AI agents](#engineering-workflow-with-ai-agents).
+
+**If you have 10 minutes, start here:**
+
+| What | Where |
+|---|---|
+| The core idea: strict identity resolution, no fuzzy matching | [`docs/adr/0001-identity-resolution-strict-cascade.md`](docs/adr/0001-identity-resolution-strict-cascade.md), [`lib/normalize.ts`](lib/normalize.ts) |
+| Double booking prevented in the database, not the app | [`supabase/migrations/20260828044934_no_double_booking.sql`](supabase/migrations/20260828044934_no_double_booking.sql) |
+| Money under concurrency: locked package credit | [`supabase/migrations/20260831055428_package_credit_integrity.sql`](supabase/migrations/20260831055428_package_credit_integrity.sql) |
+| Webhook signature verification (HMAC, constant time, fails closed) | [`supabase/functions/wa-webhook/logic.ts`](supabase/functions/wa-webhook/logic.ts) |
+| A test that fails if any staff Server Action skips the auth check | [`lib/auth/staff-actions-guard.test.ts`](lib/auth/staff-actions-guard.test.ts) |
+| Availability and slot engine | [`lib/booking/slots.ts`](lib/booking/slots.ts), [`lib/booking/intervals.ts`](lib/booking/intervals.ts) |
+
+---
+
 ## Contents
 
+- [For reviewers](#for-reviewers)
 - [The problem](#the-problem)
 - [System overview](#system-overview)
 - [Key flows](#key-flows)
